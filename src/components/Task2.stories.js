@@ -1,11 +1,11 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 
-import Task from './Task';
+import Task2 from './Task2';
 
 export default {
-    component: Task,
-    title: 'Packages/Competitive',
+    component: Task2,
+    title: 'packages/media',
     // Our exports that end in "Data" are not stories.
     excludeStories: /.*Data$/,
 };
@@ -22,10 +22,10 @@ export const actionsData = {
     onArchiveTask: action('onArchiveTask'),
 };
 
-export const Default = () => <Task task={{ ...taskData }} {...actionsData} />;
+export const Default = () => <Task2 task={{ ...taskData }} {...actionsData} />;
 
 export const Pinned = () => (
-    <Task task={{ ...taskData, state: 'TASK_PINNED' }} {...actionsData} />
+    <Task2 task={{ ...taskData, state: 'TASK_PINNED' }} {...actionsData} />
 );
 
-export const Archived = () => <Task task={{ ...taskData, state: 'TASK_ARCHIVED' }} {...actionsData} />;
+export const Archived = () => <Task2 task={{ ...taskData, state: 'TASK_ARCHIVED' }} {...actionsData} />;

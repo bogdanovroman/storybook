@@ -8,7 +8,7 @@ import { taskData, actionsData } from './Task.stories';
 
 export default {
     component: PureTaskList,
-    title: 'Packages/Events',
+    title: 'components/TaskList',
     decorators: [story => <Provider>
         <div style={{ padding: '3rem' }}>{story()}</div>
     </Provider>
@@ -34,6 +34,6 @@ export const Default = () => <PureTaskList tasks={defaultTasksData} {...actionsD
 
 export const WithPinnedTasks = () => <PureTaskList tasks={withPinnedTasksData} {...actionsData} />;
 
-export const Loading = () => <PureTaskList loading tasks={[]} {...actionsData} />;
+export const Skeleton = () => <PureTaskList loading tasks={[]} {...actionsData} />;
 
 export const Empty = () => <PureTaskList tasks={[]} {...actionsData} />;
