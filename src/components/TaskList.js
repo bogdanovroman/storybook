@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Task from './Task';
 import { connect } from 'react-redux';
-import Provider from 'react-redux/es/components/Provider'
 import { archiveTask, pinTask } from '../lib/redux';
 
 function PureTaskList({ loading, tasks, onPinTask, onArchiveTask }) {
