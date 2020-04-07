@@ -8,7 +8,7 @@ import { taskData, actionsData } from './Task.stories';
 
 export default {
     component: PureTaskList,
-    title: 'TaskList',
+    title: 'Packages/Events',
     decorators: [story => <Provider>
         <div style={{ padding: '3rem' }}>{story()}</div>
     </Provider>
