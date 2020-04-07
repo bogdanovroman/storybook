@@ -6,9 +6,10 @@ import Provider from '../lib/Provider.js'
 import PureTaskList  from './TaskList';
 import { taskData, actionsData } from './Task.stories';
 
+
 export default {
     component: PureTaskList,
-    title: 'components/TaskList',
+    title: 'COMPONENTS|TaskList',
     decorators: [story => <Provider>
         <div style={{ padding: '3rem' }}>{story()}</div>
     </Provider>

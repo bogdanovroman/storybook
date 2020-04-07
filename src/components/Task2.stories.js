@@ -5,7 +5,7 @@ import Task2 from './Task2';
 
 export default {
     component: Task2,
-    title: 'packages/media',
+    title: 'PACKAGES|media',
     // Our exports that end in "Data" are not stories.
     excludeStories: /.*Data$/,
 };

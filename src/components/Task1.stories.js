@@ -5,7 +5,7 @@ import Task1 from './Task1';
 
 export default {
     component: Task1,
-    title: 'packages/events',
+    title: 'PACKAGES|events',
     // Our exports that end in "Data" are not stories.
     excludeStories: /.*Data$/,
 };
